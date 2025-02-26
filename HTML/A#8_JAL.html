@@ -1,0 +1,269 @@
+    <title>UVM Wiki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ebebeb;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-container span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Navigation Icons */
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-icons img {
+            width: 25px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            padding: 5px;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+        }
+
+                /* Sidebar */
+        .sidebar {
+            background-color: #e2e5e7;
+            width: 150px;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            top: 70px;
+            left: 0;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 12px;
+            background: #e2e5e7;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar .menu-btn {
+            background-color: #ba282e;
+            color: white;
+            font-weight: bold;
+        }
+
+
+        /* Main Content */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin-left: 195px;
+            flex-direction: column;
+        }
+
+        .welcome-container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .welcome-container img {
+            width: 70px;
+            margin-bottom: 10px;
+        }
+
+        .welcome-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #ba282e;
+        }
+
+        .btn-secondary {
+            background-color: #ba282e;
+        }
+
+  
+         /* Footer */
+        footer {
+            background-color: #ba282e;
+            color: white;
+            padding: 25px;
+			margin-left: 190px;
+            text-align: center;
+        }
+
+        .newsletter {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .newsletter input {
+            width: 250px;
+            padding: 10px;
+            border: none;
+            margin-right: 5px;
+        }
+
+        .newsletter button {
+            background-color: #253552;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 30px;
+            margin: 10px;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+<body>
+	
+    <!-- HEADER -->
+    <header>
+        <div class="logo-container">
+            <img src="https://nacionmx.com/wp-content/uploads/2019/12/uvm_logo.jpg?w=1440" alt="UVM Logo">
+            <span>WIKI</span>
+        </div>
+        <nav class="nav-icons">
+            <img src="https://png.pngtree.com/png-vector/20240520/ourmid/pngtree-blue-home-icon-or-button-for-webside-png-image_12500532.png" alt="Home">
+            <a href="https://uvm.mx/la-uvm" target="_blank">
+            <img src="https://w7.pngwing.com/pngs/224/983/png-transparent-information-computer-icons-information-miscellaneous-blue-wikimedia-commons-thumbnail.png" alt="Info">
+			</a>
+			
+            <a href="https://mail.google.com/" target="_blank">
+    <img src="https://banner2.cleanpng.com/20180406/ezq/avgd52azx.webp" alt="Mail">
+</a>
+
+			<a href="https://blog.uvm.mx/como-ser-un-profesionista-digital" target="_blank">
+            <img src="https://e7.pngegg.com/pngimages/821/338/png-clipart-warning-sign-computer-icons-warning-icon-angle-triangle.png" alt="Alert">
+			</a>
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <img src="https://img.freepik.com/premium-vector/user-icons-includes-user-icons-people-icons-symbols-premiumquality-graphic-design-elements_981536-526.jpg" alt="User">
+        </nav>
+    </header>
+
+  <!-- LEFT MENU -->
+    <aside class="sidebar">
+        <button class="menu-btn">MENÚ ►</button>
+        <button>►</button>
+        <button>►</button>
+        <button>►</button>
+        <button>►</button>
+        <button>►</button>
+        <button>►</button>
+    </aside>
+
+    <!-- MAIN CONTAINER -->
+<div class="container">
+        <div class="welcome-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="User Icon">
+            <h2>BIENVENIDO!</h2>
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="Contraseña">
+			<a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Entrada.html" target="_blank">
+            <button class="btn btn-primary">ACCEDER</button>
+            <button class="btn btn-secondary">REGISTRARME</button>
+        </div>
+    </div>
+
+       <!-- FOOTER -->
+    <footer>
+        <a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/A%238_JAL_Entrada.html" target="_blank"> </a>
+        <h2>SUSCRÍBETEA NUESTRO NEWSLETTER</h2>
+        <div class="newsletter"> <a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/A%238_JAL_Entrada.html" target="_blank">
+          <input type="email" placeholder="Email">
+          <button>SUSCRIBIRME</button>
+        </a></div>
+        <nav class="footer-links"><a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/A%238_JAL_Entrada.html" target="_blank"> </a><a href="#">Inicio</a> <a href="#">Temas</a> <a href="#">Recursos</a> <a href="#">Comunidad</a> <a href="#">Ayuda</a> <a href="#">Términos y Condiciones</a> <a href="#">Privacidad y Políticas</a> </nav>
+       
+		<!-- SOCIAL MEDIA ICONS -->
+<div class="social-media">
+      <a href="https://www.facebook.com/UVMmx/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/uvmcomunidad/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+      </a>
+      <a href="https://uvm.mx/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Website">
+      </a>
+    </div>
+
+        <div class="footer-bottom">
+            <span>2025 Copyright</span>
+            <span>Universidad Del Valle de México</span>
+        </div>
+    </footer>
+</body>
+</html>

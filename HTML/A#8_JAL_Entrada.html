@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVM Wiki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ebebeb;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px;
+            margin-right: 5px;
+        }
+
+        .logo-container span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-icons img {
+            width: 25px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            padding: 5px;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #e2e5e7;
+            width: 150px;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            top: 70px;
+            left: 0;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 12px;
+            background: #e2e5e7;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar .menu-btn {
+            background-color: #ba282e;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Title */
+        .title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 120px;
+			margin-left: 200px;
+            color: #333;
+        }
+
+        /* Entries Container */
+        .entries-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+            padding: 45px;
+            margin-left: 200px;
+            justify-items: center;
+        }
+
+        /* Entry Box */
+        .entry-box {
+            width: 250px;
+            background-color: #e2e5e7;
+            padding: 21px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .entry-box img {
+            width: 100%;
+            height: 160px;
+            border-radius: 10px;
+        }
+
+        .entry-box h3 {
+            margin: 14px 18;
+            font-size: 18px;
+        }
+		
+		.entry-box {
+    cursor: pointer; /* Shows it's clickable */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.entry-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    background-color: #d1d5d8; /* Light color change */
+}
+
+        /* Icons */
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .icons img {
+            width: 45px;
+			height: 55px;
+			margin: 0 10px;
+            cursor: pointer;
+        }
+		
+		.icons a {
+    display: inline-block;
+}
+
+         /* Footer */
+        footer {
+            background-color: #ba282e;
+            color: white;
+            padding: 25px;
+			margin-left: 190px;
+            text-align: center;
+        }
+
+        .newsletter {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .newsletter input {
+            width: 250px;
+            padding: 10px;
+            border: none;
+            margin-right: 5px;
+        }
+
+        .newsletter button {
+            background-color: #253552;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 30px;
+            margin: 10px;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-container">
+			<a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Entrada.html" target="_blank">
+            <img src="https://nacionmx.com/wp-content/uploads/2019/12/uvm_logo.jpg?w=1440" alt="UVM Logo">
+			</a>
+            <span>WIKI</span>
+        </div>
+        <nav class="nav-icons">
+			<a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Entrada.html" target="_blank">
+            <img src="https://png.pngtree.com/png-vector/20240520/ourmid/pngtree-blue-home-icon-or-button-for-webside-png-image_12500532.png" alt="Home">
+			</a>
+			
+			<a href="https://uvm.mx/la-uvm" target="_blank">
+            <img src="https://w7.pngwing.com/pngs/224/983/png-transparent-information-computer-icons-information-miscellaneous-blue-wikimedia-commons-thumbnail.png" alt="Info">
+			</a>
+			
+            <a href="https://mail.google.com/" target="_blank">
+    <img src="https://banner2.cleanpng.com/20180406/ezq/avgd52azx.webp" alt="Mail">
+</a>
+
+			<a href="https://blog.uvm.mx/como-ser-un-profesionista-digital" target="_blank">
+            <img src="https://e7.pngegg.com/pngimages/821/338/png-clipart-warning-sign-computer-icons-warning-icon-angle-triangle.png" alt="Alert">
+			</a>
+			
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <img src="https://img.freepik.com/premium-vector/user-icons-includes-user-icons-people-icons-symbols-premiumquality-graphic-design-elements_981536-526.jpg" alt="User">
+        </nav>
+    </header>
+
+    <!-- LEFT MENU -->
+    <aside class="sidebar">
+    <button class="menu-btn">MENÚ ►</button>
+
+    <!-- Storytelling -->
+    <button onclick="window.open('file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Entrada.html', '_blank')">
+        Storytelling
+    </button>
+
+    <!-- Infografías -->
+    <button onclick="window.open('https://drive.google.com/drive/folders/16AE3Kyj6QlH99TBCVZrvdtumajycbK9k?usp=drive_link', '_blank')">
+        Infografías
+    </button>
+
+    <!-- Podcast -->
+    <button onclick="window.open('https://www.youtube.com/watch?v=BnSBCYkGUpw&t', '_blank')">
+        Podcast
+    </button>
+
+    <!-- Descargables -->
+    <button onclick="window.open('https://drive.google.com/drive/folders/1VALOM11z1_wnU5p5b6ewe6glJAywLyl4?usp=sharing', '_blank')">
+        Descargables
+    </button>
+
+    <!-- UVM Blog -->
+    <button onclick="window.open('https://blog.uvm.mx/tips-para-proteger-tu-contenido-web', '_blank')">
+        UVM Blog
+    </button>
+
+    <!-- Cerrar Sesión -->
+    <button onclick="window.open('file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL.html', '_blank')">
+        Cerrar Sesión
+    </button>
+</aside>
+
+    <!-- Title -->
+    <h1 class="title">Entradas</h1>
+
+   <!-- Entries Container -->
+<div class="entries-container">
+    <!-- Capítulo 1 -->
+    <div class="entry-box" onclick="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238__JAL_Capitulo_1.html'">
+        <img src="https://www.shutterstock.com/image-vector/isometric-globe-browser-window-color-600nw-2344360061.jpg" alt="Capítulo 1">
+        <h3>Capítulo 1</h3>
+        <div class="icons">
+            <a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Capitulo_1.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="View">
+            </a>
+            <img src="https://media-hosting.imagekit.io//02d2e668bfee4925/bookmark.png?Expires=1834022515&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NeUiZiyA4EaOReixeCR3DsMyQx3kL2wIH95Zy7E11K~r~viDk7VOhpdQWZtAYkRoUrZfvp44SOHAZUuaarutL0myCuLPk-DFs~cYIIzt5aKYSM~ItdKgPSf1q3Pqs2KKtwy-vLHkU8ge4YVIjxrsl6PZ-83~027PAVBjZ-E-0qxCrI3y303HwpM5GBNFAyQn3FBHpkvGwOHftN8TPoebgMwhSAwrwPnRYGvLY6HiyZQAsJESNzOjzE6xk8nNd50BXN-h2eKZL7UjZ3PaT-oLaCf3Jryq7m-NfyEp7SbqiqHK-I6BYAXBpIAsd3bNfLFIOm8jUvLPID02SciwSjbhNg__" alt="Bookmark">
+            <img src="https://media-hosting.imagekit.io//df360a4f7ee74ab0/like.png?Expires=1834022436&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=01x577oP3TmxbMth~KbYU0nghBt8MQXEsec93YsEKydpYFLZBR308Z-bmCQ4lRP5OYpy7oyDSK0mipcpX6twwUBl0wxs5~3Kw80tL2AfLsgoQ5Xl9zo-u12n-LzgeO0T3CyermEyAUIihoTY~Bd5hPm~EMCrFqv4S-QFOCm4520tRH0u5Dlr4MpS29Gp73dOkZWzoc4eV4vnn~v8gRMCAo3IEY5HtB7B9ZhDTMmeuZjihbjXyYguQa4ZkexN3mPCoPFRpEYWswRL5lBtdN5A-Kt~oLh3~bYNSAfzc6zIzLv~F339iO5~4PZpRVjikiDnPUSGP8Y95ZLeL5gOYsPEdA__" alt="Like">
+        </div>
+    </div>
+
+    <!-- Capítulo 2 -->
+    <div class="entry-box" onclick="window.location.href='capitulo2.html'">
+        <img src="https://bunny-wp-pullzone-szblh4ncqp.b-cdn.net/wp-content/uploads/mexico/2022/10/blobid1665612939427.png" alt="Capítulo 2">
+        <h3>Capítulo 2</h3>
+        <div class="icons">
+            <a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Capitulo_2.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="View">
+            </a>
+            <img src="https://media-hosting.imagekit.io//02d2e668bfee4925/bookmark.png?Expires=1834022515&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NeUiZiyA4EaOReixeCR3DsMyQx3kL2wIH95Zy7E11K~r~viDk7VOhpdQWZtAYkRoUrZfvp44SOHAZUuaarutL0myCuLPk-DFs~cYIIzt5aKYSM~ItdKgPSf1q3Pqs2KKtwy-vLHkU8ge4YVIjxrsl6PZ-83~027PAVBjZ-E-0qxCrI3y303HwpM5GBNFAyQn3FBHpkvGwOHftN8TPoebgMwhSAwrwPnRYGvLY6HiyZQAsJESNzOjzE6xk8nNd50BXN-h2eKZL7UjZ3PaT-oLaCf3Jryq7m-NfyEp7SbqiqHK-I6BYAXBpIAsd3bNfLFIOm8jUvLPID02SciwSjbhNg__" alt="Bookmark">
+            <img src="https://media-hosting.imagekit.io//df360a4f7ee74ab0/like.png?Expires=1834022436&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=01x577oP3TmxbMth~KbYU0nghBt8MQXEsec93YsEKydpYFLZBR308Z-bmCQ4lRP5OYpy7oyDSK0mipcpX6twwUBl0wxs5~3Kw80tL2AfLsgoQ5Xl9zo-u12n-LzgeO0T3CyermEyAUIihoTY~Bd5hPm~EMCrFqv4S-QFOCm4520tRH0u5Dlr4MpS29Gp73dOkZWzoc4eV4vnn~v8gRMCAo3IEY5HtB7B9ZhDTMmeuZjihbjXyYguQa4ZkexN3mPCoPFRpEYWswRL5lBtdN5A-Kt~oLh3~bYNSAfzc6zIzLv~F339iO5~4PZpRVjikiDnPUSGP8Y95ZLeL5gOYsPEdA__" alt="Like">
+        </div>
+    </div>
+
+    <!-- Capítulo 3 -->
+    <div class="entry-box" onclick="window.location.href='capitulo3.html'">
+        <img src="https://images.squarespace-cdn.com/content/v1/5f3570237dcd966bf24f0cab/1617752269824-ZF3MKGEJW04KI1R6TU9S/QUE%CC%81-ES-UN-DOMINIO-IMAGEN.jpg" alt="Capítulo 3">
+        <h3>Capítulo 3</h3>
+        <div class="icons">
+            <a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Capitulo_3.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="View">
+            </a>
+            <img src="https://media-hosting.imagekit.io//02d2e668bfee4925/bookmark.png?Expires=1834022515&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NeUiZiyA4EaOReixeCR3DsMyQx3kL2wIH95Zy7E11K~r~viDk7VOhpdQWZtAYkRoUrZfvp44SOHAZUuaarutL0myCuLPk-DFs~cYIIzt5aKYSM~ItdKgPSf1q3Pqs2KKtwy-vLHkU8ge4YVIjxrsl6PZ-83~027PAVBjZ-E-0qxCrI3y303HwpM5GBNFAyQn3FBHpkvGwOHftN8TPoebgMwhSAwrwPnRYGvLY6HiyZQAsJESNzOjzE6xk8nNd50BXN-h2eKZL7UjZ3PaT-oLaCf3Jryq7m-NfyEp7SbqiqHK-I6BYAXBpIAsd3bNfLFIOm8jUvLPID02SciwSjbhNg__" alt="Bookmark">
+            <img src="https://media-hosting.imagekit.io//df360a4f7ee74ab0/like.png?Expires=1834022436&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=01x577oP3TmxbMth~KbYU0nghBt8MQXEsec93YsEKydpYFLZBR308Z-bmCQ4lRP5OYpy7oyDSK0mipcpX6twwUBl0wxs5~3Kw80tL2AfLsgoQ5Xl9zo-u12n-LzgeO0T3CyermEyAUIihoTY~Bd5hPm~EMCrFqv4S-QFOCm4520tRH0u5Dlr4MpS29Gp73dOkZWzoc4eV4vnn~v8gRMCAo3IEY5HtB7B9ZhDTMmeuZjihbjXyYguQa4ZkexN3mPCoPFRpEYWswRL5lBtdN5A-Kt~oLh3~bYNSAfzc6zIzLv~F339iO5~4PZpRVjikiDnPUSGP8Y95ZLeL5gOYsPEdA__" alt="Like">
+        </div>
+    </div>
+
+    <!-- Capítulo 4 -->
+    <div class="entry-box" onclick="window.location.href='capitulo4.html'">
+        <img src="https://dinahosting.com/blog/upload/2024/06/asegurar-dominios.jpg" alt="Capítulo 4">
+        <h3>Capítulo 4</h3>
+        <div class="icons">
+            <a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Capitulo_4.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="View">
+            </a>
+            <img src="https://media-hosting.imagekit.io//02d2e668bfee4925/bookmark.png?Expires=1834022515&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NeUiZiyA4EaOReixeCR3DsMyQx3kL2wIH95Zy7E11K~r~viDk7VOhpdQWZtAYkRoUrZfvp44SOHAZUuaarutL0myCuLPk-DFs~cYIIzt5aKYSM~ItdKgPSf1q3Pqs2KKtwy-vLHkU8ge4YVIjxrsl6PZ-83~027PAVBjZ-E-0qxCrI3y303HwpM5GBNFAyQn3FBHpkvGwOHftN8TPoebgMwhSAwrwPnRYGvLY6HiyZQAsJESNzOjzE6xk8nNd50BXN-h2eKZL7UjZ3PaT-oLaCf3Jryq7m-NfyEp7SbqiqHK-I6BYAXBpIAsd3bNfLFIOm8jUvLPID02SciwSjbhNg__" alt="Bookmark">
+            <img src="https://media-hosting.imagekit.io//df360a4f7ee74ab0/like.png?Expires=1834022436&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=01x577oP3TmxbMth~KbYU0nghBt8MQXEsec93YsEKydpYFLZBR308Z-bmCQ4lRP5OYpy7oyDSK0mipcpX6twwUBl0wxs5~3Kw80tL2AfLsgoQ5Xl9zo-u12n-LzgeO0T3CyermEyAUIihoTY~Bd5hPm~EMCrFqv4S-QFOCm4520tRH0u5Dlr4MpS29Gp73dOkZWzoc4eV4vnn~v8gRMCAo3IEY5HtB7B9ZhDTMmeuZjihbjXyYguQa4ZkexN3mPCoPFRpEYWswRL5lBtdN5A-Kt~oLh3~bYNSAfzc6zIzLv~F339iO5~4PZpRVjikiDnPUSGP8Y95ZLeL5gOYsPEdA__" alt="Like">
+        </div>
+    </div>
+
+    <!-- Capítulo 5 -->
+    <div class="entry-box" onclick="window.location.href='capitulo5.html'">
+        <img src="https://enmiciudad.mx/wp-content/uploads/2024/08/f5dec04b-7722-423a-ac55-960e1129c759.jpg" alt="Capítulo 5">
+        <h3>Capítulo 5</h3>
+        <div class="icons">
+            <a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Capitulo_5.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="View">
+            </a>
+            <img src="https://media-hosting.imagekit.io//02d2e668bfee4925/bookmark.png?Expires=1834022515&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NeUiZiyA4EaOReixeCR3DsMyQx3kL2wIH95Zy7E11K~r~viDk7VOhpdQWZtAYkRoUrZfvp44SOHAZUuaarutL0myCuLPk-DFs~cYIIzt5aKYSM~ItdKgPSf1q3Pqs2KKtwy-vLHkU8ge4YVIjxrsl6PZ-83~027PAVBjZ-E-0qxCrI3y303HwpM5GBNFAyQn3FBHpkvGwOHftN8TPoebgMwhSAwrwPnRYGvLY6HiyZQAsJESNzOjzE6xk8nNd50BXN-h2eKZL7UjZ3PaT-oLaCf3Jryq7m-NfyEp7SbqiqHK-I6BYAXBpIAsd3bNfLFIOm8jUvLPID02SciwSjbhNg__" alt="Bookmark">
+            <img src="https://media-hosting.imagekit.io//df360a4f7ee74ab0/like.png?Expires=1834022436&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=01x577oP3TmxbMth~KbYU0nghBt8MQXEsec93YsEKydpYFLZBR308Z-bmCQ4lRP5OYpy7oyDSK0mipcpX6twwUBl0wxs5~3Kw80tL2AfLsgoQ5Xl9zo-u12n-LzgeO0T3CyermEyAUIihoTY~Bd5hPm~EMCrFqv4S-QFOCm4520tRH0u5Dlr4MpS29Gp73dOkZWzoc4eV4vnn~v8gRMCAo3IEY5HtB7B9ZhDTMmeuZjihbjXyYguQa4ZkexN3mPCoPFRpEYWswRL5lBtdN5A-Kt~oLh3~bYNSAfzc6zIzLv~F339iO5~4PZpRVjikiDnPUSGP8Y95ZLeL5gOYsPEdA__" alt="Like">
+        </div>
+    </div>
+
+    <!-- Capítulo 6 -->
+    <div class="entry-box" onclick="window.location.href='capitulo6.html'">
+        <img src="https://www.loading.es/blog/wp-content/uploads/que-es-un-dominio.png" alt="Capítulo 6">
+        <h3>Capítulo 6</h3>
+        <div class="icons">
+            <a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Capitulo_6.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="View">
+            </a>
+            <img src="https://media-hosting.imagekit.io//02d2e668bfee4925/bookmark.png?Expires=1834022515&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=NeUiZiyA4EaOReixeCR3DsMyQx3kL2wIH95Zy7E11K~r~viDk7VOhpdQWZtAYkRoUrZfvp44SOHAZUuaarutL0myCuLPk-DFs~cYIIzt5aKYSM~ItdKgPSf1q3Pqs2KKtwy-vLHkU8ge4YVIjxrsl6PZ-83~027PAVBjZ-E-0qxCrI3y303HwpM5GBNFAyQn3FBHpkvGwOHftN8TPoebgMwhSAwrwPnRYGvLY6HiyZQAsJESNzOjzE6xk8nNd50BXN-h2eKZL7UjZ3PaT-oLaCf3Jryq7m-NfyEp7SbqiqHK-I6BYAXBpIAsd3bNfLFIOm8jUvLPID02SciwSjbhNg__" alt="Bookmark">
+            <img src="https://media-hosting.imagekit.io//df360a4f7ee74ab0/like.png?Expires=1834022436&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=01x577oP3TmxbMth~KbYU0nghBt8MQXEsec93YsEKydpYFLZBR308Z-bmCQ4lRP5OYpy7oyDSK0mipcpX6twwUBl0wxs5~3Kw80tL2AfLsgoQ5Xl9zo-u12n-LzgeO0T3CyermEyAUIihoTY~Bd5hPm~EMCrFqv4S-QFOCm4520tRH0u5Dlr4MpS29Gp73dOkZWzoc4eV4vnn~v8gRMCAo3IEY5HtB7B9ZhDTMmeuZjihbjXyYguQa4ZkexN3mPCoPFRpEYWswRL5lBtdN5A-Kt~oLh3~bYNSAfzc6zIzLv~F339iO5~4PZpRVjikiDnPUSGP8Y95ZLeL5gOYsPEdA__" alt="Like">
+        </div>
+    </div>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>SUSCRÍBETE A NUESTRO NEWSLETTER</h2>
+        <div class="newsletter">
+            <input type="email" placeholder="Email">
+            <button>SUSCRIBIRME</button>
+        </div>
+        <nav class="footer-links">
+            <a href="#">Inicio</a>
+            <a href="#">Temas</a>
+            <a href="#">Recursos</a>
+            <a href="#">Comunidad</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Privacidad y Políticas</a>
+        </nav>
+
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="social-media">
+            <a href="https://www.facebook.com/UVMmx/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/uvmcomunidad/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+            </a>
+            <a href="https://uvm.mx/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Website">
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <span>2025 Copyright</span>
+            <span>Universidad Del Valle de México</span>
+        </div>
+    </footer>
+</body>
+</html>
+

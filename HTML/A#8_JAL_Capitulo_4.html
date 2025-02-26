@@ -1,0 +1,401 @@
+<title>UVM Wiki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ebebeb;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-container span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Navigation Icons */
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-icons img {
+            width: 25px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            padding: 5px;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #e2e5e7;
+            width: 150px;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            top: 70px;
+            left: 0;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 12px;
+            background: #e2e5e7;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar .menu-btn {
+            background-color: #ba282e;
+            color: white;
+            font-weight: bold;
+        }
+
+       /* Main Content */
+        .content {
+            margin-left: 280px;
+            margin-right: 280px;
+            padding: 20px;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .main-image {
+            width: 750;
+            height: 350px;
+            background-color: #d6d6d6;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            color: #555;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .text-content {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Right Sidebar */
+.right-sidebar {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 220px; /* Increased size */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center; /* Center align items */
+}
+
+/* Image Button */
+.image-box {
+    width: 100%;
+    height: 100px; /* Increased size */
+    border-radius: 12px; /* Smooth rounded corners */
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px; /* Ensures rounded edges */
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+}
+
+/* Title below image */
+.image-title {
+    font-size: 20px;
+    color: #333;
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+        /* Video Placeholder */
+        .video-box {
+            width: 100%;
+            height: 150px;
+            background-color: #d6d6d6;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 150px;
+            font-size: 16px;
+            color: #555;
+            cursor: pointer;
+        }
+		
+ /* Footer */
+        footer {
+            background-color: #ba282e;
+            color: white;
+            padding: 25px;
+			margin-left: 190px;
+            text-align: center;
+        }
+
+        .newsletter {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .newsletter input {
+            width: 250px;
+            padding: 10px;
+            border: none;
+            margin-right: 5px;
+        }
+
+        .newsletter button {
+            background-color: #253552;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 30px;
+            margin: 10px;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+		
+    </style>
+<body>
+ <!-- HEADER -->
+    <header>
+        <div class="logo-container">
+			<a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Entrada.html" target="_blank">
+            <img src="https://nacionmx.com/wp-content/uploads/2019/12/uvm_logo.jpg?w=1440" alt="UVM Logo">
+			</a>
+            <span>WIKI</span>
+        </div>
+        <nav class="nav-icons">
+			<a href="file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Entrada.html" target="_blank">
+            <img src="https://png.pngtree.com/png-vector/20240520/ourmid/pngtree-blue-home-icon-or-button-for-webside-png-image_12500532.png" alt="Home">
+			</a>
+			
+			<a href="https://uvm.mx/la-uvm" target="_blank">
+            <img src="https://w7.pngwing.com/pngs/224/983/png-transparent-information-computer-icons-information-miscellaneous-blue-wikimedia-commons-thumbnail.png" alt="Info">
+			</a>
+			
+            <a href="https://mail.google.com/" target="_blank">
+    <img src="https://banner2.cleanpng.com/20180406/ezq/avgd52azx.webp" alt="Mail">
+</a>
+
+			<a href="https://blog.uvm.mx/como-ser-un-profesionista-digital" target="_blank">
+            <img src="https://e7.pngegg.com/pngimages/821/338/png-clipart-warning-sign-computer-icons-warning-icon-angle-triangle.png" alt="Alert">
+			</a>
+			
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <img src="https://img.freepik.com/premium-vector/user-icons-includes-user-icons-people-icons-symbols-premiumquality-graphic-design-elements_981536-526.jpg" alt="User">
+        </nav>
+    </header>
+
+<!-- LEFT MENU -->
+    <aside class="sidebar">
+    <button class="menu-btn">MENÚ ►</button>
+
+    <!-- Storytelling -->
+    <button onclick="window.open('file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL_Entrada.html', '_blank')">
+        Storytelling
+    </button>
+
+    <!-- Infografías -->
+    <button onclick="window.open('https://drive.google.com/drive/folders/16AE3Kyj6QlH99TBCVZrvdtumajycbK9k?usp=drive_link', '_blank')">
+        Infografías
+    </button>
+
+    <!-- Podcast -->
+    <button onclick="window.open('https://www.youtube.com/watch?v=BnSBCYkGUpw&t', '_blank')">
+        Podcast
+    </button>
+
+    <!-- Descargables -->
+    <button onclick="window.open('https://drive.google.com/drive/folders/1VALOM11z1_wnU5p5b6ewe6glJAywLyl4?usp=sharing', '_blank')">
+        Descargables
+    </button>
+
+    <!-- UVM Blog -->
+    <button onclick="window.open('https://blog.uvm.mx/tips-para-proteger-tu-contenido-web', '_blank')">
+        UVM Blog
+    </button>
+
+    <!-- Cerrar Sesión -->
+    <button onclick="window.open('file:///C:/Users/james/Desktop/UVM%20A.Y%2022-25/8th%20Cuatrimestre/PROGRAMACION%20EN%20AMBIENTE%20WEB/Extra%20Files/A%238/Capitulos/A%238_JAL.html', '_blank')">
+        Cerrar Sesión
+    </button>
+</aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+        <p class="breadcrumb">Temas > Escritura > Guía de escritura</p>
+
+        <img src="https://bunny-wp-pullzone-szblh4ncqp.b-cdn.net/wp-content/uploads/mexico//2022/10/blobid1665612939427.png" alt="Proteger su Dominio" width="750" height="400">
+
+        <h1>CAPÍTULO 4: EL REINO DIGITAL. LA GRAN EXPANSIÓN</h1>
+
+        <p class="text-content">
+Fabelo comenzó a construir su sitio web después de asegurar su dominio. Entendió que un ámbito requería bases sólidas y era insuficiente por sí solo. Recogió sus bienes:
+
+        </p>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<ol>
+  <li>Introducciones textuales a su material para los visitantes.</li>
+  <li>Ayudas visuales para resaltar ideas importantes.</li>
+  <li>Utilice animaciones y vídeos para mejorar la experiencia de aprendizaje.</li>
+ <li>Componentes interactivos para brindar a los usuarios una experiencia práctica con la información.</li>
+</ol>  
+
+</body>
+</html>
+			
+		<p class="text-content">
+Sin embargo, mientras trabajaba, descubrió que su sitio web estaba lento. 
+			
+		<p class="text-content">
+"Un gran reino también debe ser rápido y fácil de alcanzar", aclaró el maestro Rafael. 
+		<p class="text-content">
+Para garantizar un funcionamiento perfecto, optimice sus imágenes, utilice el almacenamiento en caché y elija una empresa de alojamiento de buena reputación.
+
+Después de que Fabelo utilizó estas estrategias, su sitio web se cargó rápidamente y dio la bienvenida a los visitantes de inmediato.
+
+        </p>
+
+        <!-- Clickable Video Box -->
+        <a href="https://www.youtube.com/watch?v=KTD_jD9cEcg&t=3s" target="_blank">
+            <div class="video-box">Haga clic para ver el video</div>
+        </a>
+    </div>
+
+     <!-- RIGHT SIDEBAR -->
+<aside class="right-sidebar">
+    <button class="image-box" onclick="window.open('https://blog.hubspot.es/website/que-es-un-dominio', '_blank')">
+        <img src="https://a2colores.es/wp-content/uploads/2018/02/como_elegir_mejor_dominio.jpg" alt="Imagen 1">
+    </button>
+    <div class="image-title">El Dominio Web</div>
+    
+    <button class="image-box" onclick="window.open('https://www.hubspot.com/hubfs/media/queesdominio.png', '_blank')">
+        <img src="https://cronuts.digital/wp-content/uploads/2020/04/C%C3%B3mo-cambiar-el-dominio-de-tu-web-de-manera-correcta.jpg" alt="Imagen 2">
+    </button>
+    <div class="image-title">Infografías</div>
+    
+    <button class="image-box" onclick="window.open('https://www.youtube.com/watch?v=zcczT1-P8nc', '_blank')">
+        <img src="https://dinahosting.com/blog/upload/2019/07/glosario_dominios_dinahosting.jpg" alt="Imagen 3">
+    </button>
+    <div class="image-title">Glosario de Dominios</div>
+</aside>
+	
+<!-- FOOTER -->
+    <footer>
+        <h2>SUSCRÍBETE A NUESTRO NEWSLETTER</h2>
+        <div class="newsletter">
+            <input type="email" placeholder="Email">
+            <button>SUSCRIBIRME</button>
+        </div>
+        <nav class="footer-links">
+            <a href="#">Inicio</a>
+            <a href="#">Temas</a>
+            <a href="#">Recursos</a>
+            <a href="#">Comunidad</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Privacidad y Políticas</a>
+        </nav>
+
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="social-media">
+            <a href="https://www.facebook.com/UVMmx/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/uvmcomunidad/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+            </a>
+            <a href="https://uvm.mx/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Website">
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <span>2025 Copyright</span>
+            <span>Universidad Del Valle de México</span>
+        </div>
+    </footer>
+
